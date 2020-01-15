@@ -1,0 +1,16 @@
+{
+  "name": "node-js-for-mongodb",
+  "version": "1.0.0",
+  "description": "This project implements nodeJs for data manipulation from the MongoDB database",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nodejs",
+    "mongodb",
+    "query"
+  ],
+  "author": "Nilamdeen Fathima Nuzrah",
+  "license": "ISC"
+}
