@@ -16,7 +16,7 @@ MongoClient.connect(
 
         db.collection('CO2EmissionFromNaturalGas').find({$and:[{Year:'2000'}, { $expr: { $gt: [ { $toDouble: "$CO2KilotonnesEmitted" }, 0.0 ] } },{ $expr: { $lte: [ { $toDouble: "$CO2KilotonnesEmitted" }, 25.0 ] } } ]}).toArray(
             (error, CO2EmissionFromNaturalGas) => {
-                // console.log(globalAvgTemp)
+                // console.log(CO2EmissionFromNaturalGas)
                 CO2EmissionFromNaturalGas.forEach(function(CO2EmissionFromNaturalGas){
                     console.log(CO2EmissionFromNaturalGas.Location)
                     console.log(CO2EmissionFromNaturalGas.Year)

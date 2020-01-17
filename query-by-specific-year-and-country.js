@@ -16,7 +16,7 @@ MongoClient.connect(
 
         db.collection('CO2EmissionFromNaturalGas').find({$and:[{Year:'2013'},{Location:'China'}]}).toArray(
             (error, CO2EmissionFromNaturalGas) => {
-                // console.log(globalAvgTemp)
+                // console.log(CO2EmissionFromNaturalGas)
                 CO2EmissionFromNaturalGas.forEach(function(CO2EmissionFromNaturalGas){
                     console.log(CO2EmissionFromNaturalGas.Location)
                     console.log(CO2EmissionFromNaturalGas.Year)
